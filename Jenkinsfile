@@ -3,7 +3,7 @@ pipeline {
     environment {
         REGISTRY = "rajkumar427/cicd_django"
         VERSION = "${env.BUILD_ID}"
-        PREVIOUS_VERSION = VERSION - 1
+        PREVIOUS_VERSION = "${env.BUILD_ID.toInteger() - 1}"
     }
     stages {
         stage('Database Update') {

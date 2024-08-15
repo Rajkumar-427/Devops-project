@@ -10,3 +10,4 @@ sudo chown root:docker /var/run/docker.sock
 sudo chmod 660 /var/run/docker.sock
 sudo usermod -aG docker jenkins
 sudo systemctl restart jenkins
+dckr_pat_cOt_7ixq5vttHipigo_OKlo_hw0
